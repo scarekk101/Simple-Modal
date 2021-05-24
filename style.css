@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+}
+
+body{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    color: black;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    transition: .3s all;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 1.5rem;
+}
+button:hover{
+    color: white;
+    background-color: #000;
+}
+
+
+.modal-section{
+    height:100vh;
+    width:100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-section-overlay{
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: rgba(100,100,100, .3);
+}
+.modal-section-close-btn{
+    position: absolute;
+    right:0;
+    top:0;
+    margin: 3rem 5rem;
+    cursor: pointer;
+}
+
+.modal-section-close-btn svg{
+    transition: .3s all ease;
+}
+
+.modal-section-close-btn:hover svg{
+    transform: rotate(45deg);
+}
+
+.modal-section-content{
+position: relative;
+height:50%;
+width:70%;
+}
+
+.open{
+    display: flex;
+}
